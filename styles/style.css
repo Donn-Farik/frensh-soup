@@ -1,11 +1,10 @@
 /*Some necessary adjustments*/
-h1, body, html, main {
-  margin: 0;
-}
+
 /*Import the font and set the default size*/
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 0;
 }
 /* .head{
   display: flex;
@@ -13,62 +12,76 @@ html {
   justify-content: center;
   align-items: center;
 } */
-header{
+header {
   background-image: url(../images/soup.jpg);
   background-position: center;
   background-size: cover;
   height: 800px;
+
   /* width: 80%; */
-  
- display: flex; 
+
+  display: flex;
   justify-content: center;
-  align-items: center; 
-  
+  align-items: center;
 }
-header h1{
+header h1 {
   color: white;
   font-size: 4rem;
   font-weight: bold;
-  
 }
-.parafo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.parafo p{
-  padding: 3rem;
-  width: 80%;
+.parafo p {
   text-align: center;
+  margin: 60px 0 60px;
 }
-.ingredients-img{
+
+.ingredients-img {
   /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; */
   margin-left: 10%;
 }
-
-.img-set{
- display: flex;
- justify-content: center;
+.ingredients {
+  margin: 50px 0 40px;
 }
-.list-directions{
+
+.img-set {
   display: flex;
-  
-  align-items: center;
   justify-content: center;
 }
-.list-directions .directions{
+.list-directions {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px 0 30px;
+}
+.list-directions .directions {
   width: 80%;
 }
 
 ul {
-  list-style-type: '- ';}
-  hr{
-    width: 80%;
+  list-style-type: "- ";
+}
+hr {
+  width: 80%;
+}
+li {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 400px) {
+  .img-set {
+    display: none;
   }
-  li{
-    margin-bottom:12px
+  header h1 {
+    padding-left: 10px;
   }
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  body {
+    background-color: #264653;
+  }
+}
